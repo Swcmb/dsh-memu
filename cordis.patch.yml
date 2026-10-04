@@ -1,0 +1,5 @@
+# dsh-memu 的 bundle patch 层：向 profile 的插件平面插入本插件。
+# 形状与已装插件 dsh-rules 的 cordis.patch.yml 完全一致。
+- insert:
+    - id: dsh-memu
+      name: dsh-memu

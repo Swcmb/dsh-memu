@@ -1,0 +1,24 @@
+{
+  "name": "dsh-memu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "把 memU 长期记忆接入 DeepSeek Harness：原生 retrieve 工具 + 常驻指令 + 会话转录导出（memU 的 dsh 宿主记录 seam）",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

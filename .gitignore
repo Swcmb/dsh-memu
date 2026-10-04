@@ -1,0 +1,9 @@
+# 依赖与安装产物
+node_modules/
+*.tgz
+
+# 日志与临时文件
+*.log
+*.log.*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+﻿# Node 生态默认按 LF 处理，保持与上游一致，避免跨平台 diff 噪声。
+lib/**/*.js  text eol=lf
+test/**/*.js text eol=lf
+*.js         text eol=lf
+*.json       text eol=lf
+*.yml        text eol=lf
+*.md         text eol=lf
+LICENSE      text eol=lf
