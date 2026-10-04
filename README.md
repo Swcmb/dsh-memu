@@ -5,8 +5,7 @@
 - **record** —— 订阅 DSH 的 `session/event`，把每个会话投影成 memU 能挖的规范 JSONL。
 - **inject** —— 往系统提示词注册常驻指令，并提供 `memu_retrieve` 等原生工具。
 
-本仓库是 memU 主仓库的 git submodule，也是可独立安装的公开仓库：既可以
-`git clone` 下来单独装，也可以随 memU 主仓库一起 checkout。
+本仓库是独立安装的公开仓库：从这里 `git clone` 下来单独装。
 
 ## 它做什么
 
@@ -25,13 +24,9 @@
 前提：memU 的 `memu-dsh` 二进制在 `PATH` 上（`uv tool install --editable <memU 检出目录>`）。
 
 ```sh
-# 方式一：从独立仓库克隆
+# 从本仓库克隆
 git clone https://github.com/Swcmb/dsh-memu.git
 dsh plugin --profile desktop add link:<克隆路径>
-
-# 方式二：作为 memU 主仓库的 submodule 一起 checkout
-git clone --recurse-submodules git@github.com:Swcmb/memU.git
-dsh plugin --profile desktop add link:<memU 检出目录>/dsh-memu
 ```
 
 装完确认 profile 的 `package.json` 里 `dependencies` 与 `dsh.profile.bundles` 都出现了
